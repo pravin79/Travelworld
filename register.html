@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/register.css">
+    <!--Font Awesome (only for social icons)-->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+
+    <section class="header">
+        <a href="#" class="logo"><h2>Travel World</h2></a>
+        <ul class="items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="login" href="login.html">Login</a>  
+     </section>
+
+    <section class="registerbx bn">
+        <div class="content">
+            <h2>Register Here</h2>
+            <form class="formbx">
+                <div class="text-input">
+                    <!-- <label for="Firstname">Firstname</label> -->
+                    <input type="text" id="Firstname" placeholder="Firstname" required>    
+                </div>
+                <div class="text-input">
+                    <input type="text" placeholder="Lastname" required>
+                </div>
+                <div class="text-input">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="text-input">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <!-- <div class="text-input">
+                    <label class="bday" for="bday"></label>
+                    <input type="date" id="bday" name="bday" value="bday" required>
+                </div> -->
+                <!-- <div class="text-area">
+                    <textarea name="text" id="" cols="30" rows="10" placeholder="Address"></textarea>
+                </div> -->
+                <div class="gender">
+                    <div class="gender-btn">
+                        <label class="lab" for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                    </div>
+                    <div class="gender-btn">
+                        <label class="lab" for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </div>
+                </div>
+                <input class="btns" type="button" value="Sign in">
+                <a class="user" href="login.html">Already a user?</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
