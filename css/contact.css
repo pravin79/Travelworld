@@ -1,227 +1,141 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 
 body{
     background: #111;
 }
 
-section{
-    position: relative;
-    padding: 100px;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000000;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: rgba(52, 54, 54, 0.596);
-    /* box-shadow: 0px 2px 5px rgb(255, 255, 255) ; */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
-}
-
-.header .logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.header .items{
-    list-style-type: none;
-    display: flex;
-    padding-right: 50px;
-}
-
-.header a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
-.header .home{
-    color: rgb(229, 255, 0);
-}
-
-.header a:hover{
-    color: rgb(229, 255, 0);
-    /* border: 1px solid rgb(229, 255, 0); */
-}
-
-.header li{
-    margin: 5px 15px;
-}
-
-.header .login{
-    margin: 4px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.banner{
-    position: relative;
-    width: 100%;
+.title-head{
+    padding: 1% 5%;
+    background: url(../assets/imgs/contact.jpg) 100%;
+    background-size: cover;
+    color: #fff; 
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.banner:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
+.fix{
+    position: fixed;
+    padding: 0 10%;
+    background: rgba(0, 0, 0, 0.562);
     left: 0;
-    width: 100%;
-    height: 400px;
     z-index: 1;
-    background: linear-gradient(to top,#111,transparent);
 }
 
-.banner .content{
-    position: relative;
+.navigation{
+    filter: invert();
+   
+}
+
+.navbar-nav{
     text-align: center;
-    z-index: 1;
 }
 
-.banner .content h1{
+.brand-logo{
+    font-size: 2.2rem;
     color: #fff;
-    font-size: 40px;
-    
+    font-weight: 700;
 }
-.banner .content p{
+
+/* .nav-it{
+    float: right;
+} */
+
+.links{
+    font-size: 1.2rem;
     color: #fff;
-    font-size: 1.2em;
-    padding: 0 100px;
-    text-align: left;
+    font-weight: 600;
 }
 
-.banner .content .p1{
-    text-align: right;
+.title-cont{
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
-.fitbg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.title{
+    font-size: 5rem;
+    margin: 4% 0;
 }
 
-.about{
-    position: relative;
-    width: 100%;
+.conct{
+    padding: 5% 10%;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.banner h2{
-    color: #fff;
-    font-size: 40px;
-    float: left;
+.conct h3{
+    font-size: 3rem;
+    /* text-align: center; */
+    margin: 20px;
 }
 
-.banner .text-input{
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
-    margin: 8px 0;
+.conct form{
+   /* margin-left: 50px; */
+   padding: 1%;
 }
 
-.banner .text-input input{
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #111; 
-    margin: 10px 0px;
-    padding: 10px 10px;
+.conct input{
+    padding: 10px 30px;
+    margin: 10px;
     border-radius: 5px;
+    padding-right: 100px;
 }
 
-.banner .content .text-email input{
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #111; 
-    width: 100%;
-    margin: 0px 0px;
-    padding: 10px 10px;
-    border-radius: 5px;
-}
-
-.banner .content .text-area textarea{
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #111; 
-    width: 100%;
-    height: 100px;
-    margin-top: 30px;
-    padding: 10px 10px;
+.conct textarea{
+    padding: 10px 30px;
+    height: 150px;
+    margin: 10px;
+    padding-right: 50px;
     border-radius: 5px;
     resize: vertical;
 }
 
-.btns{
-    border: none;
-    outline: none;
+.conct .btn{
     background: #fff;
-    color: #111; 
-    margin-top: 20px;
     padding: 10px 30px;
-    border-radius: 5px;
-    float: right;
+    text-align: center;
+    margin-left: 27px;
 }
 
-.bn{
-    min-height: 50vh;
-}
-
-.contact {
-    position: relative;
-    width: 100%;
-    min-height: 30vh;
+.info{
+    padding: 5% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contact .cont-box{
-    position: relative;
+    margin: 0 auto;
+    color: #fff;
     text-align: center;
-    z-index: 1;
-    display: flex;
-    margin-bottom: 30px; 
 }
 
-.contact .cont-box h2{
-    color: #fff;
-    float: left;
-    font-size: 30px;
+.info .infos{
+    margin: 10px auto;
 }
 
-.contact .cb p{
+.letter{
+    padding: 10% 25%;
+    text-align: center;
     color: #fff;
-    margin: 0px 30px;
+    min-width: 60vh;
 }
+
+.letter input{
+    display: inline-block;
+    padding: 11px 30px;
+    margin: 20px auto;  
+    border-radius: 7px;  
+}
+
 
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: rgba(51, 51, 51, 0.123);
 }
 
 .footer .sci{
@@ -243,6 +157,27 @@ section{
     max-width: 40px;
     font-size: 30px;
     color: #fff;
+    transition: .3s;
+}
+
+.footer .fb:hover{
+    color: #3b5998;
+    transform: translateY(-10px);
+}
+
+.footer .ig:hover{
+    color:  #9b3f72;
+    transform: translateY(-10px);
+}
+
+.footer .tw:hover{
+    color:  #00acee;
+    transform: translateY(-10px);
+}
+
+.footer .yt:hover{
+    color:  #FF0000;
+    transform: translateY(-10px);
 }
 
 .copyrights{
@@ -258,3 +193,30 @@ section{
     text-decoration: none;
 }
 
+@media (max-width: 500px)
+{
+
+    .fix{
+        padding: 0 4%;
+    }
+
+    .title-cont{
+        margin-top: 250px;
+    }
+    
+    .title{
+        font-size: 3.5rem;
+    }
+
+    .btns{
+        margin-right: 30px;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 1000px)
+{
+    .title-cont{
+        margin-top: 250px;
+    }
+}

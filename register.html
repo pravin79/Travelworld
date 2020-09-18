@@ -3,63 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Travel World/Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/register.css">
-    <!--Font Awesome (only for social icons)-->
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
+    
+    <section class="container-fluid  title-head">
+        <nav class="navbar navbar-expand-lg navbar-light navigation sticky">
+            <a class="navbar-brand brand-logo" href="#">Travel World</a>
+            
+            <button class="navbar-toggler btnst" type="button" data-toggle="collapse" data-target="#menus" aria-controls="menus" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="menus">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link links" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links" href="destinations.html">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link links" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link links" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
 
-    <section class="header">
-        <a href="#" class="logo"><h2>Travel World</h2></a>
-        <ul class="items">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="destinations.html">Destinations</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <a class="login" href="login.html">Login</a>  
-     </section>
-
-    <section class="registerbx bn">
-        <div class="content">
-            <h2>Register Here</h2>
-            <form class="formbx">
-                <div class="text-input">
-                    <!-- <label for="Firstname">Firstname</label> -->
-                    <input type="text" id="Firstname" placeholder="Firstname" required>    
-                </div>
-                <div class="text-input">
-                    <input type="text" placeholder="Lastname" required>
-                </div>
-                <div class="text-input">
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="text-input">
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <!-- <div class="text-input">
-                    <label class="bday" for="bday"></label>
-                    <input type="date" id="bday" name="bday" value="bday" required>
-                </div> -->
-                <!-- <div class="text-area">
-                    <textarea name="text" id="" cols="30" rows="10" placeholder="Address"></textarea>
-                </div> -->
-                <div class="gender">
-                    <div class="gender-btn">
-                        <label class="lab" for="male">Male</label>
-                        <input type="radio" id="male" name="gender" value="male">
+    <section class="container-fluid input-info">
+        <div class="col-lg-4">
+            <form>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="inputAddress">Name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Name" required>
                     </div>
-                    <div class="gender-btn">
-                        <label class="lab" for="female">Female</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                    </div>
+                  <div class="form-group">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                  </div>
                 </div>
-                <input class="btns" type="button" value="Sign in">
-                <a class="user" href="login.html">Already a user?</a>
-            </form>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control" required>
+                      <option selected>Gujarat</option>
+                      <option>Goa</option>
+                      <option>Kerala</option>
+                      <option>Madhya Pradesh</option>
+                      <option>Maharashtra</option>
+                      <option>Manipur</option>
+                      <option>Punjab</option>
+                      <option>Uttar Pradesh</option>
+                      <option>West Benga</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip" required>
+                  </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Female
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Remember Me
+                    </label>
+                    <a class="user" href="login.html">Already an user?</a>
+                  </div>
+                </div>
+                <button type="submit" class="btns">Sign in</button>
+              </form>
         </div>
     </section>
+
+    <section class="container-fluid footer">
+      <ul class="sci">
+         <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
+         <li><a href="#"><i class="fab fa-instagram ig"></i></a></li>
+         <li><a href="#"><i class="fab fa-twitter tw"></i></a></li>
+         <li><a href="#"><i class="fab fa-youtube yt"></i></a></li>    
+     </ul>
+      <h4 class="copyrights">Copyright &copy;2020 <a href="#">Travel World</a>. All rights reserved.</h4>
+  </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
