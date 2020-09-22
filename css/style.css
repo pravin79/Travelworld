@@ -26,7 +26,6 @@ body{
 
 .navigation{
     filter: invert();  
-    ;
 }
 
 .navbar-nav{
@@ -37,6 +36,11 @@ body{
     font-size: 2.2rem;
     color: #fff;
     font-weight: 700;
+}
+
+.logo-img{
+    width: 60px;
+    filter: invert();
 }
 
 /* .nav-it{
@@ -254,6 +258,18 @@ body{
 .footer .yt:hover{
     color:  #FF0000;
     transform: translateY(-10px);
+}
+
+.logo-tag{
+    margin-bottom: 20px;
+}
+
+.logo-imgs{
+    width: 40px;
+}
+
+.top{
+    margin-bottom: 10px;
 }
 
 .copyrights{
