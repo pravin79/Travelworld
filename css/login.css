@@ -176,6 +176,49 @@ body{
     text-decoration: none;
 }
 
+.conct-bx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 60vh;
+    /* background: chartreuse; */
+    
+}
+
+.conct-bx h2{
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 6px solid #fff;
+    margin-bottom: 20px;
+}
+
+.conct-bx .rem{
+    color: #fff;
+}
+
+.submit-btn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    margin: 2px 0;
+}
+
+.submit-btn:hover{
+    background: #111;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.user:hover{
+    color: #fff;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
 @media (max-width: 500px)
 {
 

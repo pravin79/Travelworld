@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yravel World/Login</title>
+    <title>Travel World/Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/all.css">
@@ -42,16 +42,16 @@
             </div>
           </nav>
     </section>
-
+<!-- 
     <section>
         <section class="container-fluid conct">
-            <form action="">
+            <form action="index.html">
                 <h3>Login</h3>
                 <div class="col-lg-4 input">
-                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Username" required>
                 </div>
                 <div class="col-lg-4 input">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" required>
                 </div>
                 <div class="form-group">
                   <div class="form-check">
@@ -66,8 +66,47 @@
             </form>
             
         </section>
-    </section>
+    </section> -->
 
+        <div class="container-fluid conct-bx">
+        <div class="booking-form-login item-bx" id="medialogin" style="width: 300px;">
+        <form class="loginform" onsubmit="return loginvalidate();" action="index.html">
+            <h2 class="loginheader">Login</h2>
+
+            <div class="form-group">
+                <span class="form-label" id="form-label"></span>
+                <input class="form-control" type="text" id="username" placeholder="Username" oninput="checkbox()"/>
+                <span id="uname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <span class="form-label"></span>
+                <input class="form-control" type="password" id="password" placeholder="Password" oninput="checkbox()"/>
+                <span id="pass" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label rem" for="gridCheck">
+                  Remember Me
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="submit" class="submit-btn">Login</button>
+                </div>
+
+                <div class="col-md-6">
+                    <div style="margin-top: 10px; opacity: 0.7"><a class="user" href="register.html" style="margin-left: 10px; color: #fff;">Not an user?</a></div>
+                </div>
+            </div>
+        </form>
+        </div>
+      </div>
+      
     <section class="container-fluid footer">
       <ul class="sci">
          <li><a href="#"><i class="fab fa-facebook-f fb"></i></a></li>
@@ -82,5 +121,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

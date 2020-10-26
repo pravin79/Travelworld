@@ -140,6 +140,47 @@ body{
     text-decoration: none;
 }
 
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont h2{
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 6px solid #fff;
+    display: inline-block;
+}
+
+.cont span{
+    color: #fff;
+}
+
+label{
+    color: #fff;
+}
+
+.cont-bx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    margin: 2px 0;
+}
+
+.submit-btn:hover{
+    background: #111;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
 @media (max-width: 500px)
 {
 
