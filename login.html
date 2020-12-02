@@ -70,24 +70,24 @@
 
         <div class="container-fluid conct-bx">
         <div class="booking-form-login item-bx" id="medialogin" style="width: 300px;">
-        <form class="loginform" onsubmit="return loginvalidate();" action="index.html">
+        <form class="loginform" onsubmit="return loginvalidate();" action="validation.php" method="post">
             <h2 class="loginheader">Login</h2>
 
             <div class="form-group">
                 <span class="form-label" id="form-label"></span>
-                <input class="form-control" type="text" id="username" placeholder="Username" oninput="checkbox()"/>
+                <input class="form-control" type="text" id="username" name="user" placeholder="Username" oninput="checkbox()"/>
                 <span id="uname" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <span class="form-label"></span>
-                <input class="form-control" type="password" id="password" placeholder="Password" oninput="checkbox()"/>
+                <input class="form-control" type="password" id="password" name="pass1" placeholder="Password" oninput="checkbox()"/>
                 <span id="pass" class="text-danger"></span>
             </div>
 
             <div class="form-group">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input" type="checkbox" id="gridCheck" checked>
                 <label class="form-check-label rem" for="gridCheck">
                   Remember Me
                 </label>

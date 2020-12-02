@@ -128,24 +128,24 @@
       <div class="cont">
       <div class="col-lg-6 col-md-6 cont-bx">
       <div class="booking-form-signup" id="mediasignup" style="margin-bottom: 100px;width: 52%;">
-        <form class="loginform" onsubmit="return signupvalidate();" action="index.html" method="post">
+        <form class="loginform" onsubmit="return signupvalidate();" action="registration.php" method="post">
             <h2 class="signupheader">Sign Up</h2>
 
             <div class="form-group">
                 <span class="form-label">Firstname</span>
-                <input class="form-control" type="text" id="firstname" placeholder="Firstname" oninput="checkbox2()"/>
+                <input class="form-control" type="text" id="firstname" name="user" placeholder="Firstname" oninput="checkbox2()"/>
                 <span id="fname" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <span class="form-label">Lastname</span>
-                <input class="form-control" type="text" id="lastname" placeholder="Lastname" oninput="checkbox2()"/>
+                <input class="form-control" type="text" id="lastname" name="user1" placeholder="Lastname" oninput="checkbox2()"/>
                 <span id="lname" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <span class="form-label">Email Id</span>
-                <input class="form-control" type="text" id="emailid" placeholder="Email" oninput="checkbox2()"/>
+                <input class="form-control" type="text" id="emailid" name="email" placeholder="Email" oninput="checkbox2()"/>
                 <span id="eid" class="text-danger"></span>
             </div>
                 <div class="row">
@@ -163,7 +163,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <span class="form-label">Age</span>
-                            <input class="form-control" type="number" id="age" placeholder="Age" oninput="checkbox2()"/>
+                            <input class="form-control" type="number" id="age" name="age" placeholder="Age" oninput="checkbox2()"/>
                             <span id="agee" class="text-danger"></span>
                         </div>
                     </div>
@@ -171,13 +171,13 @@
 
             <div class="form-group">
                 <span class="form-label">Password</span>
-                <input class="form-control" type="password" id="password" placeholder="Password" oninput="checkbox2()"/>
+                <input class="form-control" type="password" id="password" name="pass1" placeholder="Password" oninput="checkbox2()"/>
                 <span id="pass" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <span class="form-label">Confirm Password</span>
-                <input class="form-control" type="password" id="cpassword" placeholder="Confirm-Password" oninput="checkbox2()"/>
+                <input class="form-control" type="password" id="cpassword" name="pass2" placeholder="Confirm-Password" oninput="checkbox2()"/>
                 <span id="cpass" class="text-danger"></span>
             </div>
 

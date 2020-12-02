@@ -1,3 +1,6 @@
+<!-- <?php
+    session_start();
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +19,7 @@
         <div class="container-fluid fix">
         <nav class="navbar navbar-expand-lg navbar-light navigation sticky">
             <a class="navbar-brand brand-logo" href="#"><img class="logo-img" src="assets/imgs/logo.png"></img>Travel World</a>
-            
+
             <button class="navbar-toggler btns" type="button" data-toggle="collapse" data-target="#menus" aria-controls="menus" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon "></span>
             </button>
@@ -48,6 +51,9 @@
         </div>
           <div class="row title-cont">
             <div class="col-lg-12">
+
+            <!-- <strong>Hey! <?php echo$_SESSION['user'] = $user; ?> </strong> -->
+                  
               <h1 class="title " data-aos="fade-up" >Explore The World</h1>
               <p class="text-title" data-aos="fade-up" >Travellers are Dreamers who make their desire for Advanture of Beauty, Travel is never a matter of money but of courage. Travel...the best way to lost and found...all at the same time.</p>
               <a class="btn btn-light btn-md" href="#get-started" data-aos="fade-up" > Get Started  <i class="fas fa-arrow-right arrow"></i></a>
